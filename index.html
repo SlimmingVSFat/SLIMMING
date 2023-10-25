@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/data.css" />
+		<link rel="stylesheet" href="css/pageLayout.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/homePage.css" />
+		<link rel='stylesheet' href="css/Diagnosis.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel='stylesheet' href="css/loader.css" />
+		<!-- <link rel="stylesheet" href="css/Reproduction_Package.css" /> -->
+		<link rel='stylesheet' href="css/diagnosis_tools.css" />
+
+		<script type="text/javascript" src="js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.5.1/jquery.particleground.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!-- <script type="text/javascript" src="js/Reproduction_Package.js"></script> -->
+		<script src="js/about.js"></script>
+		<script src="js/aa.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/d-test.js"></script>
+
+	</head>
+	<body style="width:100%;background-color: #062427;margin: 0;">
+		<div id="body_div" style="width:100%;height:100%;">
+			<div class="top_menu" id="head_div" style="float:left;width:100%;height: 65px;background-color: #000000;background: rgba(0,0,0,0.5);position: absolute;top: 0;left:0;">
+				<ul>
+					<li>
+						<div class="head_menu" id="About">
+							<span style="cursor: pointer">About</span>
+						</div>
+					</li>
+					<!-- <li>
+						<div class="head_menu" id="Reproduction_Package">
+							<span style="cursor: pointer">Reproduction Package</span>
+						</div>
+					</li> -->
+					<li>
+						<div class="head_menu" id="Issuereport">
+							<span style="cursor: pointer">Issue Reports</span>
+						</div>
+					</li>
+					<li>
+						<div class="head_menu" id="Diagnosis">
+							<span style="cursor: pointer">Diagnosis</span>
+						</div>
+					</li>
+					<li class="aa">
+						<div class="head_menu active" id="Home">
+							<span style="cursor: pointer">Home</span>
+						</div>
+					</li>
+				</ul>
+				<div style="float:left;margin-left:20px;">
+					<img id="logo_img" style="margin-top: 6px;height: 52px;" src="img/java2.png" />
+				</div>
+			</div>
+			<div id="main_div" class="main_content" style="overflow-y: auto;position: absolute;top:65px;width:100%;">
+				<!-- <div class="reproduction" style="color: white; float: right;line-height: 1.5;font-family: Palatino Linotype">
+					<span style="font-weight: bold;font-size: 20px">DownLoad:</span><br />
+					<a href="files/20k Subjects Info In RQ1.xlsx" style="color: white;text-decoration: none;" onmouseover="this.style.color='#FCFFB3';"
+					 onmouseout="this.style.color='#FFFFFF';">1.&nbsp;20k Subjects Info In RQ1</a><br>
+					<a href="files/Benchmark Dataset (132 DM issues and subjects used for evaluation in RQ4).zip" style="color: white;text-decoration: none;"
+					 onmouseover="this.style.color='#FCFFB3';" onmouseout="this.style.color='#FFFFFF';">2.&nbsp;Benchmark Dataset (132
+						DM issues and subjects <br />&nbsp;&nbsp;&nbsp;&nbsp;used for evaluation in RQ4)</a><br>
+					<a href="files/Empirical Study Dataset (151 DM issues for RQ2&3).xlsx" style="color: white;text-decoration: none;"
+					 onmouseover="this.style.color='#FCFFB3';" onmouseout="this.style.color='#FFFFFF';">3.&nbsp;Empirical Study
+						Dataset (151 DM issues for <br />&nbsp;&nbsp;&nbsp;&nbsp;RQ2&3)</a>
+				</div> -->
+				<ul>
+					<li class="aa">
+						<div style="position: absolute;top: 0;width:100%;height:100%;min-height:870px;border-radius: 10px;background-image: url(img/homeBackgroundImage.png);background-position: bottom;background-repeat: no-repeat;">
+							<div id="h2w_div" style="width:299px;height:60px;margin:auto;text-align: center;margin-top:200px;border-radius: 36px;background-color: rgba(54,164,80,0.7);box-shadow: inset 0px 0px 4px 0px #ffffff;">
+								<div id="click_div" style="float: left;margin-left: 13px;margin-top: 10px;">
+									<img src='img/seq/点击0000.png' class="click_no_active click_active" />
+									<img src='img/seq/点击0001.png' class="click_no_active" />
+									<img src='img/seq/点击0002.png' class="click_no_active" />
+									<img src='img/seq/点击0003.png' class="click_no_active" />
+									<img src='img/seq/点击0004.png' class="click_no_active" />
+									<img src='img/seq/点击0005.png' class="click_no_active" />
+									<img src='img/seq/点击0006.png' class="click_no_active" />
+									<img src='img/seq/点击0007.png' class="click_no_active" />
+									<img src='img/seq/点击0008.png' class="click_no_active" />
+									<img src='img/seq/点击0009.png' class="click_no_active" />
+									<img src='img/seq/点击0010.png' class="click_no_active" />
+									<img src='img/seq/点击0011.png' class="click_no_active" />
+									<img src='img/seq/点击0012.png' class="click_no_active" />
+									<img src='img/seq/点击0013.png' class="click_no_active" />
+									<img src='img/seq/点击0014.png' class="click_no_active" />
+									<img src='img/seq/点击0015.png' class="click_no_active" />
+									<img src='img/seq/点击0016.png' class="click_no_active" />
+									<img src='img/seq/点击0017.png' class="click_no_active" />
+									<img src='img/seq/点击0018.png' class="click_no_active" />
+									<img src='img/seq/点击0019.png' class="click_no_active" />
+									<img src='img/seq/点击0020.png' class="click_no_active" />
+									<img src='img/seq/点击0021.png' class="click_no_active" />
+									<img src='img/seq/点击0022.png' class="click_no_active" />
+									<img src='img/seq/点击0023.png' class="click_no_active" />
+									<img src='img/seq/点击0024.png' class="click_no_active" />
+									<img src='img/seq/点击0025.png' class="click_no_active" />
+									<img src='img/seq/点击0026.png' class="click_no_active" />
+									<img src='img/seq/点击0027.png' class="click_no_active" />
+									<img src='img/seq/点击0028.png' class="click_no_active" />
+								</div>
+								<div style="float: left;margin-left: 12px;">
+									<span id="How" style="font-family: PingFangSC-Medium;text-decoration: underline;font-size: 24px;font-weight: normal;font-stretch: normal;line-height: 58px;letter-spacing: 0px;color: #ffffff; cursor: pointer">How
+										Hero works?</span>
+								</div>
+							</div>
+							<div style="width:1000px;margin:auto;text-align: center;margin-top:40px;">
+								<span style="font-family: SourceHanSerifSC-Heavy;font-size: 74px;font-weight: normal;font-stretch: normal;line-height: 89px;letter-spacing: 0px;color: #FFFFFF;">Dependency
+									Management Issue Diagnosis</span>
+							</div>
+							<div style="width:1000px;margin:auto;text-align: center;,margin-top:20px;">
+								<span style="font-family: SourceHanSerifSC-Heavy;font-size: 22px;font-weight: normal;font-stretch: normal;line-height: 89px;letter-spacing: 0px;color: #ffffff;">Building
+									a healthy Java ecosystem</span>
+							</div>
+							<div id="diagnosis_div" style="width:251px;height:82px;margin:auto;text-align: center;,margin-top:20px;border-radius: 20px;background-image: url(img/diagnosisButton.png);">
+								<span id="start" style="font-family: PingFangSC-Regular;font-size: 24px;font-weight: normal;font-stretch: normal;line-height: 75px;letter-spacing: 0px;color: #ffffff; cursor: pointer">Diagnose</span>
+							</div>
+							<div style="position: fixed;right: 55px;bottom:55px;">
+								<img style="position: relative;" src='img/java.png' />
+							</div>
+						</div>
+					</li>
+					<!--Diagnosis-->
+					<li id="li-diagnosis">
+						<div id="d-help-win" class="d-help-win">
+							<div id="win-title">Help<span id="d-help-colse" class="close_2" onmouseover="this.className='close_1'"
+								 onmouseout="this.className='close_2';">
+									<center>&times;</center>
+								</span></div>
+							<div id="win-content">
+
+								<div class="help-word">1. Input the <span class="help-em">name and version tag number</span> of your Go project
+									released on GitHub.<br />
+									2. Press the <span class="help-em">"Start"</span> button, we will provide the dependency graph, then help you
+									diagnose the dependency conflict issues in your project
+									and provide the detailed root causes and suggested fixing solutions.</div>
+								<center><img class="help-gif" src="../static/img/help/part1.gif" alt="" /></center>
+								<div class="help-word">In addition to <span class="help-em">version tag number</span>, you can also input the
+									<span class="help-em">commit hash code</span> of your project.</div>
+								<center><img class="help-gif" src="../static/img/help/part2.gif" alt="" /></center>
+							</div>
+						</div>
+						<div class="git">
+							<a href="https://github.com/slimming-fat" style="text-decoration: none;color: #FFFFFF;" onmouseover="this.style.color='#328E75';"
+							 onmouseout="this.style.color='#FFFFFF';">
+								<center>
+									<div class="git-img-div">
+										<div class="git-img-b" style="float:right;text-align: center;" onmouseover="this.style.backgroundColor='#FFFFFF';"
+										 onmouseout="this.style.backgroundColor='#328E75';">
+											<img class="git_img" src="img/githublogo.png" onmousemove="src='img/githublogo2.png';this.style.backgroundColor='#328E75';"
+											 onmouseout="src='img/githublogo.png';this.style.backgroundColor='#FFFFFF';" />
+
+										</div>
+									</div>
+
+									<div class="git_str">
+										View on GitHub
+									</div>
+								</center>
+							</a>
+						</div>
+						<div id="diagnosis-class" style=" margin:auto;width: 1200px;height:auto;background-color: #236360;opacity: 0.8;border-radius: 10px;padding-left: 60px;padding-right: 60px;padding-bottom:10px;padding-top:10px;">
+							<!-- <div id="d_wait" style="margin:0 auto;top:110px;text-align: center;position: absolute;width: 1080px;height: 676px;background-color: rgba(255, 255, 255, 1);border-radius: 10px; visibility:hidden">
+								<div class="loader loader-3">
+									<div class="dot dot1">S</div>
+									<div class="dot dot2">L</div>
+									<div class="dot dot3">I</div>
+									<div class="dot dot4">M</div>
+									<div class="dot dot5">M</div>
+									<div class="dot dot6">I</div>
+									<div class="dot dot7">N</div>
+									<div class="dot dot8">G</div>
+									<center>
+										<div id="loader-word">
+											<span class="loader-word-1">Analyzing... </span>
+											<span class="loader-word-2">The process may take you several minutes.</span>
+										</div>
+									</center>
+									<center>
+										<div id="loader-word-3">Most functions are working, while some are under tuning for performance...</div>
+									</center>
+								</div>
+							</div>
+							<div id="d-help">
+								<img id="help-img" class="d-help-img" src=".img/demo/demo-2.png" onmousemove="this.src='img/demo/demo-1.png';"
+								 onmouseout="this.src='img/demo/demo-2.png';" />
+							</div> -->
+							<div id="d-input" style="width:100%;height:44px;margin-top: 30px;">
+								<div style="float:left;margin-left:20px;">
+									<label>
+										<span style="font-family: PingFangSC-Regular;font-size: 20px;font-weight: normal;font-stretch: normal;line-height: 44px;letter-spacing: 0px;color: #ffffff;">Project
+											name</span>
+									</label>
+									<input id="d_repo" type="text" style="margin-left: 10px;width: 234px;height: 44px;font-size: 18px;background-color: #ffffff;border-radius: 8px;border: solid 1px #ededed;" />
+								</div>
+								<div style="float:left;margin-left:4%;">
+									<label>
+										<span style="font-family: PingFangSC-Regular;font-size: 20px;font-weight: normal;font-stretch: normal;line-height: 44px;letter-spacing: 0px;color: #ffffff;">Version/Hash
+											Commit ID</span>
+									</label>
+									<input id="d_version" type="text" style="margin-left: 10px;width: 234px;height: 44px;font-size: 18px;background-color: #ffffff;border-radius: 8px;border: solid 1px #ededed;" />
+								</div>
+								<div class="d_buttion" id="start_diagnosis_btn" style="float:right;margin-right:20px;width: 100px;height: 44px;background-color: #328E75;border-radius: 8px;text-align: center;cursor:pointer;"
+								 onmouseover="this.style.backgroundColor='#083C3A';" onmouseout="this.style.backgroundColor='#328E75';">
+									<span style="font-family: PingFangSC-Regular;font-size: 20px;font-weight: normal;font-stretch: normal;line-height: 44px;letter-spacing: 0px;color: #ffffff;">Start</span>
+								</div>
+							</div>
+							<div id="diagnosis_model" style="margin: auto;width: 100%;height:444px;background-color: #C9D6D5;border-radius: 8px;margin-top: 28px;">
+								<div style="width:100%;height:44px;margin:auto;text-align: center;padding-top: 10px;">
+									<span style="font-family: PingFangSC-Semibold;font-size: 19px;font-weight: normal;font-stretch: normal;letter-spacing: 0px;color: #36a450;">Dependency
+										Model</span>
+								</div>
+								<div id="dependency-model" style="z-index: 10;width:100%;height:400px;color: #000000;background-color: #f2f4f7;"></div>
+							</div>
+							<div class="d-report" style="width:100%;margin-top:28px;margin-bottom:30px;min-height:200px;height:fit-content;">
+								<div style="float:left;width: 49%;height:100%;min-height: 200px;background-color: #052327;border-radius: 8px;">
+									<div style="width:100%;height: 44px;background-color: rgba(255,255,255,0.1);border-radius: 8px 8px 0px 0px;text-align: center;">
+										<span style="line-height: 44px;font-size: 19px;">Root cause</span>
+									</div>
+
+								</div>
+								<div style="float:right;width: 49%;height: 100%;min-height: 200px;background-color: #052327;border-radius: 8px;">
+									<div style="width:100%;height: 44px;background-color: rgba(255,255,255,0.1);border-radius: 8px 8px 0px 0px;text-align: center;">
+										<span style="line-height: 44px;font-size: 19px;">Suggested solutions</span>
+									</div>
+									<div id="suggested_solution_div" style="width:100%;height:fit-content;padding:15px;color: #000000;">
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div style="margin:auto;width: 1200px;height: auto;min-height: 884px;background-color: #236360;opacity: 0.8;border-radius: 10px;padding: 40px;padding-left: 60px;padding-right: 60px;padding-bottom:10px; ">
+						</div>
+					</li>
+					<!--issue report-->
+					<li>
+						<div style="margin:0 auto;width: 1500px;height: 90%;min-height: 784px;min-width:1300px;border-radius: 10px;">
+							<table class="table" cellspacing="0" cellpadding="0">
+								<caption class="tr_title td">Table Statistics of dependency management issues reported by SLIMMING
+								</caption>
+								<caption class="tr_mark_01">
+									<i><strong>Fixed</strong>:</i> Confirmed issues were fixed with our debloating solutions;
+									<i><strong>Fixing</strong>:</i> Confirmed issues were under fixing with our debloating solutions;
+									<i><strong>Confirmed</strong>:</i> Confirmed issues but developers plan to use bloated dependencies in future;
+									<i><strong>Rejected</strong>:</i> Rejected issues in which developers did not care about bloated
+									dependencies;
+									<i><strong>Pending</strong>:</i> Pending issues;
+								</caption>
+								<thead>
+									<tr>
+										<th class='th color table_width_ID' style='border-right: 1px solid #70C99E;border-bottom: 1px solid #70C99E;'>ID
+										</th>
+										<th class='th color table_width_ProjectName' style='border-bottom: 1px solid #70C99E'>Project Name
+										</th>
+										<th class='th color table_width_ID' style='border-bottom: 1px solid #70C99E'>Stars
+										</th>
+										<th class='th color table_width_ID' style='border-bottom: 1px solid #70C99E'>Forks
+										</th>
+										<th class='th color table_width_IssueType' style='border-bottom: 1px solid #70C99E'>#Bloated Dependencies</th>
+										<th class='th color table_width_IssueType' style='border-bottom: 1px solid #70C99E'>#Vulnerabilities
+										</th>
+										<th class='th color table_width_IssueType' style='border-bottom: 1px solid #70C99E'>#Dependency Conflicts
+										</th>
+										<th class='th color table_width_IssueType' style='border-bottom: 1px solid #70C99E'>#Incompatiable Licenses
+										</th>
+										<th class='th color table_width_IssueType' style='border-bottom: 1px solid #70C99E'>#Outdated Dependencies
+										</th>
+										<th class='th color table_width_CommitID' style='border-bottom: 1px solid #70C99E'>Issue ID
+										</th>
+										<th class='th color table_width_ID' style='border-bottom: 1px solid #70C99E'>Status
+										</th>
+									</tr>
+								</thead>
+								<tbody class="baseScroll">
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>1</td>
+										<td class='td_font table_width_ProjectName'>Tutorials</td>
+										<td class='td_font table_width_ID'>34.7k</td>
+										<td class='td_font table_width_ID'>53.9k</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/eugenp/tutorials/pull/13568'>#13568</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>2</td>
+										<td class='td_font table_width_ProjectName'>Openapi-Generator</td>
+										<td class='td_font table_width_ID'>17.2k</td>
+										<td class='td_font table_width_ID'>5.5k</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/OpenAPITools/openapi-generator/pull/9768'>#9768</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>3</td>
+										<td class='td_font table_width_ProjectName'>Deeplearning4J</td>
+										<td class='td_font table_width_ID'>13.1k</td>
+										<td class='td_font table_width_ID'>5k</td>
+										<td class='td_font table_width_IssueType'>15</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/deeplearning4j/deeplearning4j/pull/9190'>#9190</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>4</td>
+										<td class='td_font table_width_ProjectName'>Small-Spring</td>
+										<td class='td_font table_width_ID'>4.1k</td>
+										<td class='td_font table_width_ID'>1.2k</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/fuzhengwei/small-spring/pull/56'>#56</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>5</td>
+										<td class='td_font table_width_ProjectName'>Jetcache</td>
+										<td class='td_font table_width_ID'>4k</td>
+										<td class='td_font table_width_ID'>930</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/alibaba/jetcache/pull/565'>#565</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>6</td>
+										<td class='td_font table_width_ProjectName'>Xchange</td>
+										<td class='td_font table_width_ID'>3.7k</td>
+										<td class='td_font table_width_ID'>1.9k</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/knowm/XChange/pull/4200'>#4200</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>7</td>
+										<td class='td_font table_width_ProjectName'>Vertx-Examples</td>
+										<td class='td_font table_width_ID'>3.4k</td>
+										<td class='td_font table_width_ID'>2.1k</td>
+										<td class='td_font table_width_IssueType'>16</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/vert-x3/vertx-examples/pull/429'>#429</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>8</td>
+										<td class='td_font table_width_ProjectName'>Immutables</td>
+										<td class='td_font table_width_ID'>3.3k</td>
+										<td class='td_font table_width_ID'>275</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/immutables/immutables/pull/1382'>#1382</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>9</td>
+										<td class='td_font table_width_ProjectName'>Linkis</td>
+										<td class='td_font table_width_ID'>3.1k</td>
+										<td class='td_font table_width_ID'>1.1k</td>
+										<td class='td_font table_width_IssueType'>32</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/linkis/pull/1716'>#1716</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>10</td>
+										<td class='td_font table_width_ProjectName'>Spring-Boot-Quick</td>
+										<td class='td_font table_width_ID'>2.2k</td>
+										<td class='td_font table_width_ID'>873</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/vector4wang/spring-boot-quick/pull/32'>#32</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>11</td>
+										<td class='td_font table_width_ProjectName'>Azure-Sdk-For-Java</td>
+										<td class='td_font table_width_ID'>2k</td>
+										<td class='td_font table_width_ID'>1.8k</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/Azure/azure-sdk-for-java/pull/19070'>#19070</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>12</td>
+										<td class='td_font table_width_ProjectName'>Dubbo-Samples</td>
+										<td class='td_font table_width_ID'>2k</td>
+										<td class='td_font table_width_ID'>1.7k</td>
+										<td class='td_font table_width_IssueType'>10</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/dubbo-samples/pull/278'>#278</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>13</td>
+										<td class='td_font table_width_ProjectName'>Lemon</td>
+										<td class='td_font table_width_ID'>1.6k</td>
+										<td class='td_font table_width_ID'>1.6k</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/xuhuisheng/lemon/pull/210'>#210</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>14</td>
+										<td class='td_font table_width_ProjectName'>Mycat2</td>
+										<td class='td_font table_width_ID'>1.5k</td>
+										<td class='td_font table_width_ID'>467</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/MyCATApache/Mycat2/pull/694'>#694</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>15</td>
+										<td class='td_font table_width_ProjectName'>Ysomap</td>
+										<td class='td_font table_width_ID'>940</td>
+										<td class='td_font table_width_ID'>119</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/wh1t3p1g/ysomap/pull/18'>#18</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>16</td>
+										<td class='td_font table_width_ProjectName'>Swagger-Parser</td>
+										<td class='td_font table_width_ID'>694</td>
+										<td class='td_font table_width_ID'>498</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/swagger-api/swagger-parser/pull/1590'>#1590</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>17</td>
+										<td class='td_font table_width_ProjectName'>Tomee</td>
+										<td class='td_font table_width_ID'>419</td>
+										<td class='td_font table_width_ID'>687</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/tomee/pull/852'>#852</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>18</td>
+										<td class='td_font table_width_ProjectName'>Tarsjava</td>
+										<td class='td_font table_width_ID'>388</td>
+										<td class='td_font table_width_ID'>166</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/TarsCloud/TarsJava/pull/170'>#170</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>19</td>
+										<td class='td_font table_width_ProjectName'>Javanotes</td>
+										<td class='td_font table_width_ID'>340</td>
+										<td class='td_font table_width_ID'>85</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/niumoo/JavaNotes/pull/1'>#1</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>20</td>
+										<td class='td_font table_width_ProjectName'>Openimaj</td>
+										<td class='td_font table_width_ID'>317</td>
+										<td class='td_font table_width_ID'>115</td>
+										<td class='td_font table_width_IssueType'>15</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/openimaj/openimaj/pull/317'>#317</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>21</td>
+										<td class='td_font table_width_ProjectName'>Tesseract4Java</td>
+										<td class='td_font table_width_ID'>289</td>
+										<td class='td_font table_width_ID'>88</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/tesseract4java/tesseract4java/pull/61'>#61</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>22</td>
+										<td class='td_font table_width_ProjectName'>Azure-Iot-Sdk-Java</td>
+										<td class='td_font table_width_ID'>192</td>
+										<td class='td_font table_width_ID'>237</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/Azure/azure-iot-sdk-java/pull/1543'>#1543</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>23</td>
+										<td class='td_font table_width_ProjectName'>Jax-Rs2-Guide-Ii</td>
+										<td class='td_font table_width_ID'>175</td>
+										<td class='td_font table_width_ID'>147</td>
+										<td class='td_font table_width_IssueType'>10</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/feuyeux/jax-rs2-guide-II/pull/203'>#203</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>24</td>
+										<td class='td_font table_width_ProjectName'>Jax-Rs2-Guide-Ii</td>
+										<td class='td_font table_width_ID'>175</td>
+										<td class='td_font table_width_ID'>147</td>
+										<td class='td_font table_width_IssueType'>14</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/feuyeux/jax-rs2-guide-II/pull/36'>#36</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>25</td>
+										<td class='td_font table_width_ProjectName'>Combatlogx</td>
+										<td class='td_font table_width_ID'>134</td>
+										<td class='td_font table_width_ID'>44</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/SirBlobman/CombatLogX/pull/191'>#191</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>26</td>
+										<td class='td_font table_width_ProjectName'>Camel-Kafka-Connector</td>
+										<td class='td_font table_width_ID'>129</td>
+										<td class='td_font table_width_ID'>95</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/camel-kafka-connector/pull/1352'>#1352</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>27</td>
+										<td class='td_font table_width_ProjectName'>Quickstart</td>
+										<td class='td_font table_width_ID'>100</td>
+										<td class='td_font table_width_ID'>103</td>
+										<td class='td_font table_width_IssueType'>13</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/jbosstm/quickstart/pull/388'>#388</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>28</td>
+										<td class='td_font table_width_ProjectName'>Nerdronix</td>
+										<td class='td_font table_width_ID'>87</td>
+										<td class='td_font table_width_ID'>113</td>
+										<td class='td_font table_width_IssueType'>18</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/menacher/nerdronix/pull/3'>#3</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>29</td>
+										<td class='td_font table_width_ProjectName'>Wso2-Synapse</td>
+										<td class='td_font table_width_ID'>74</td>
+										<td class='td_font table_width_ID'>426</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/wso2/wso2-synapse/pull/1771'>#1771</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>30</td>
+										<td class='td_font table_width_ProjectName'>Quickbooks-V3-Java-Sdk</td>
+										<td class='td_font table_width_ID'>56</td>
+										<td class='td_font table_width_ID'>132</td>
+										<td class='td_font table_width_IssueType'>12</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/intuit/QuickBooks-V3-Java-SDK/pull/158'>#158</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>31</td>
+										<td class='td_font table_width_ProjectName'>Karate-Grpc</td>
+										<td class='td_font table_width_ID'>43</td>
+										<td class='td_font table_width_ID'>30</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/pecker-io/karate-grpc/pull/23'>#23</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>32</td>
+										<td class='td_font table_width_ProjectName'>Yuzhouwan</td>
+										<td class='td_font table_width_ID'>39</td>
+										<td class='td_font table_width_ID'>20</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/asdf2014/yuzhouwan/pull/343'>#343</a></td>
+										<td class='td_font table_width_ID'>Fixed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>33</td>
+										<td class='td_font table_width_ProjectName'>Alldata</td>
+										<td class='td_font table_width_ID'>1.8k</td>
+										<td class='td_font table_width_ID'>692</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/alldatacenter/alldata/pull/50'>#50</a></td>
+										<td class='td_font table_width_ID'>Fixing</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>34</td>
+										<td class='td_font table_width_ProjectName'>Springboot-Jwt-Starter</td>
+										<td class='td_font table_width_ID'>680</td>
+										<td class='td_font table_width_ID'>272</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/bfwg/springboot-jwt-starter/pull/34'>#34</a></td>
+										<td class='td_font table_width_ID'>Fixing</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>35</td>
+										<td class='td_font table_width_ProjectName'>Tez</td>
+										<td class='td_font table_width_ID'>428</td>
+										<td class='td_font table_width_ID'>403</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/tez/pull/127'>#127</a></td>
+										<td class='td_font table_width_ID'>Fixing</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>36</td>
+										<td class='td_font table_width_ProjectName'>Amazon-Kinesis-Video-<br>Streams-Producer-Sdk-Java</td>
+										<td class='td_font table_width_ID'>77</td>
+										<td class='td_font table_width_ID'>79</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/pull/135'>#135</a></td>
+										<td class='td_font table_width_ID'>Fixing</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>37</td>
+										<td class='td_font table_width_ProjectName'>Osm2World</td>
+										<td class='td_font table_width_ID'>481</td>
+										<td class='td_font table_width_ID'>118</td>
+										<td class='td_font table_width_IssueType'>17</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/tordanik/OSM2World/pull/174'>#174</a></td>
+										<td class='td_font table_width_ID'>Confirmed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>38</td>
+										<td class='td_font table_width_ProjectName'>Kafka-Connect-Mq-Source</td>
+										<td class='td_font table_width_ID'>86</td>
+										<td class='td_font table_width_ID'>81</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/ibm-messaging/kafka-connect-mq-source/pull/83'>#83</a></td>
+										<td class='td_font table_width_ID'>Confirmed</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>39</td>
+										<td class='td_font table_width_ProjectName'>Skywalking-Java</td>
+										<td class='td_font table_width_ID'>576</td>
+										<td class='td_font table_width_ID'>449</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/skywalking-java/pull/172'>#172</a></td>
+										<td class='td_font table_width_ID'>Rejected</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>40</td>
+										<td class='td_font table_width_ProjectName'>Jeecg-Boot</td>
+										<td class='td_font table_width_ID'>35.5k</td>
+										<td class='td_font table_width_ID'>13.8k</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/jeecgboot/jeecg-boot/pull/4819'>#4819</a></td>
+										<td class='td_font table_width_ID'>Rejected</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>41</td>
+										<td class='td_font table_width_ProjectName'>Datax</td>
+										<td class='td_font table_width_ID'>13.9k</td>
+										<td class='td_font table_width_ID'>5k</td>
+										<td class='td_font table_width_IssueType'>17</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/alibaba/DataX/pull/973'>#973</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>42</td>
+										<td class='td_font table_width_ProjectName'>Itstack-Demo-Design</td>
+										<td class='td_font table_width_ID'>5.7k</td>
+										<td class='td_font table_width_ID'>1.7k</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>nan</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/fuzhengwei/itstack-demo-design/pull/57'>#57</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>43</td>
+										<td class='td_font table_width_ProjectName'>Mall4J</td>
+										<td class='td_font table_width_ID'>3.9k</td>
+										<td class='td_font table_width_ID'>1.1k</td>
+										<td class='td_font table_width_IssueType'>15</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/gz-yami/mall4j/pull/18'>#18</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>44</td>
+										<td class='td_font table_width_ProjectName'>Dataspherestudio</td>
+										<td class='td_font table_width_ID'>2.7k</td>
+										<td class='td_font table_width_ID'>945</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/WeBankFinTech/DataSphereStudio/pull/584'>#584</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>45</td>
+										<td class='td_font table_width_ProjectName'>Pay-Java-Parent</td>
+										<td class='td_font table_width_ID'>2.4k</td>
+										<td class='td_font table_width_ID'>864</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/egzosn/pay-java-parent/pull/92'>#92</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>46</td>
+										<td class='td_font table_width_ProjectName'>Springboot-Notebook</td>
+										<td class='td_font table_width_ID'>2.3k</td>
+										<td class='td_font table_width_ID'>931</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/chengxy-nds/Springboot-Notebook/pull/24'>#24</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>47</td>
+										<td class='td_font table_width_ProjectName'>Java-Sec-Code</td>
+										<td class='td_font table_width_ID'>2k</td>
+										<td class='td_font table_width_ID'>549</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/JoyChou93/java-sec-code/pull/75'>#75</a></td>
+										<td class='td_font table_width_ID'>Rejected</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>48</td>
+										<td class='td_font table_width_ProjectName'>Scouter</td>
+										<td class='td_font table_width_ID'>2k</td>
+										<td class='td_font table_width_ID'>544</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/scouter-project/scouter/pull/925'>#925</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>49</td>
+										<td class='td_font table_width_ProjectName'>Ninja</td>
+										<td class='td_font table_width_ID'>1.9k</td>
+										<td class='td_font table_width_ID'>537</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/ninjaframework/ninja/pull/746'>#746</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>50</td>
+										<td class='td_font table_width_ProjectName'>Aws-Sdk-Java-V2</td>
+										<td class='td_font table_width_ID'>1.8k</td>
+										<td class='td_font table_width_ID'>732</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/aws/aws-sdk-java-v2/pull/3192'>#3192</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>51</td>
+										<td class='td_font table_width_ProjectName'>X-Springboot</td>
+										<td class='td_font table_width_ID'>1.8k</td>
+										<td class='td_font table_width_ID'>666</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/yzcheng90/X-SpringBoot/pull/31'>#31</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>52</td>
+										<td class='td_font table_width_ProjectName'>Yshopmall</td>
+										<td class='td_font table_width_ID'>1.2k</td>
+										<td class='td_font table_width_ID'>462</td>
+										<td class='td_font table_width_IssueType'>17</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/guchengwuyue/yshopmall/pull/23'>#23</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>53</td>
+										<td class='td_font table_width_ProjectName'>Ruoyi-Cloud</td>
+										<td class='td_font table_width_ID'>904</td>
+										<td class='td_font table_width_ID'>548</td>
+										<td class='td_font table_width_IssueType'>35</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/yangzongzhuan/RuoYi-Cloud/pull/36'>#36</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>54</td>
+										<td class='td_font table_width_ProjectName'>Protege</td>
+										<td class='td_font table_width_ID'>864</td>
+										<td class='td_font table_width_ID'>228</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/protegeproject/protege/pull/1051'>#1051</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>55</td>
+										<td class='td_font table_width_ProjectName'>Spring-Amqp-Samples</td>
+										<td class='td_font table_width_ID'>571</td>
+										<td class='td_font table_width_ID'>394</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/spring-projects/spring-amqp-samples/pull/65'>#65</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>56</td>
+										<td class='td_font table_width_ProjectName'>Jmeter-Plugins</td>
+										<td class='td_font table_width_ID'>527</td>
+										<td class='td_font table_width_ID'>393</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>6</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/undera/jmeter-plugins/pull/523'>#523</a></td>
+										<td class='td_font table_width_ID'>Rejected</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>57</td>
+										<td class='td_font table_width_ProjectName'>Jprotobuf-Rpc-Socket</td>
+										<td class='td_font table_width_ID'>515</td>
+										<td class='td_font table_width_ID'>219</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/baidu/Jprotobuf-rpc-socket/pull/84'>#84</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>58</td>
+										<td class='td_font table_width_ProjectName'>Ice4J</td>
+										<td class='td_font table_width_ID'>412</td>
+										<td class='td_font table_width_ID'>220</td>
+										<td class='td_font table_width_IssueType'>10</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>3</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/jitsi/ice4j/pull/258'>#258</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>59</td>
+										<td class='td_font table_width_ProjectName'>Asterisk-Java</td>
+										<td class='td_font table_width_ID'>379</td>
+										<td class='td_font table_width_ID'>290</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/asterisk-java/asterisk-java/pull/383'>#383</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>60</td>
+										<td class='td_font table_width_ProjectName'>Msf4J</td>
+										<td class='td_font table_width_ID'>376</td>
+										<td class='td_font table_width_ID'>359</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/wso2/msf4j/pull/582'>#582</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>61</td>
+										<td class='td_font table_width_ProjectName'>Kontraktor</td>
+										<td class='td_font table_width_ID'>343</td>
+										<td class='td_font table_width_ID'>48</td>
+										<td class='td_font table_width_IssueType'>11</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>8</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/RuedigerMoeller/kontraktor/pull/119'>#119</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>62</td>
+										<td class='td_font table_width_ProjectName'>Myblog</td>
+										<td class='td_font table_width_ID'>322</td>
+										<td class='td_font table_width_ID'>88</td>
+										<td class='td_font table_width_IssueType'>12</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>12</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/xiongsihao/myblog/pull/8'>#8</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>63</td>
+										<td class='td_font table_width_ProjectName'>Milton2</td>
+										<td class='td_font table_width_ID'>161</td>
+										<td class='td_font table_width_ID'>117</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/miltonio/milton2/pull/176'>#176</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>64</td>
+										<td class='td_font table_width_ProjectName'>Shardingsphere-<br>Elasticjob-Ui</td>
+										<td class='td_font table_width_ID'>150</td>
+										<td class='td_font table_width_ID'>91</td>
+										<td class='td_font table_width_IssueType'>4</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/apache/shardingsphere-elasticjob-ui/pull/153'>#153</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #236360;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>65</td>
+										<td class='td_font table_width_ProjectName'>Jacorb</td>
+										<td class='td_font table_width_ID'>71</td>
+										<td class='td_font table_width_ID'>82</td>
+										<td class='td_font table_width_IssueType'>5</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>1</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>2</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/JacORB/JacORB/pull/299'>#299</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+									<tr class='td td_font' style="background-color: #328E75; opacity: 0.9;">
+										<td class='th td_font color table_width_ID' style='border-right: 1px solid #70C99E'>66</td>
+										<td class='td_font table_width_ProjectName'>Karamel</td>
+										<td class='td_font table_width_ID'>37</td>
+										<td class='td_font table_width_ID'>22</td>
+										<td class='td_font table_width_IssueType'>9</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>0</td>
+										<td class='td_font table_width_IssueType'>7</td>
+										<td class='td_font table_width_CommitID'><a href='https://github.com/karamelchef/karamel/pull/206'>#206</a></td>
+										<td class='td_font table_width_ID'>Pending</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<div style="margin:auto;width: 1200px;height: 90%;min-height: 784px;background-color: rgba(44,96,45,0.7);border-radius: 10px;padding: 40px;padding-left: 60px;padding-right: 60px;padding-bottom:10px;">
+							<div class="left_menu" style="height:95%;width:100%">
+								<ul style="display: flex;">
+									<li>
+										<div id="about_net_div" class="about_module about_active" style="padding:10px 7px 7px 10px;width:100%;border-radius: 10px;height:100px;width:100%;border: 2px solid #16a085; cursor: pointer">
+											<div style="height:60px;width:100%;float:left;">
+												<div style="float:left;">
+													<img style="width:50px;" src="img/net.png" />
+												</div>
+												<div style="float:left;margin-left:10px;">
+													<span style="line-height: 50px;color:#16a085;font-weight: 700; font-size: 30px;">下载安装</span>
+												</div>
+											</div>
+											<div style="width:100%;float:left;">
+												<span style="font-size: 15px;">SLIMMING是一款Maven插件</span>
+											</div>
+										</div>
+									</li>
+									<li style="margin-left: 5%;">
+										<div id="about_bug_div" class="about_module" style="padding:10px 7px 7px 10px;width:100%;border-radius: 10px;height: 100px;width:100%;border: 2px solid #16a085;cursor: pointer">
+											<div style="height:60px;width:100%;float:left;">
+												<div style="float:left;">
+													<img style="width:50px;" src="img/bug.png" />
+												</div>
+												<div style="float:left;margin-left:10px;">
+													<span style="line-height: 50px;color:#16a085;font-weight: 700;font-size: 30px;">运行指令</span>
+												</div>
+											</div>
+											<div style="width:100%;float:left;">
+												<span style="font-size: 15px;">支持单/多模块Maven项目冗余依赖检测和修复</span>
+											</div>
+										</div>
+									</li>
+									<li style="margin-left: 5%;">
+										<div id="about_sol_div" class="about_module" style="padding:10px 7px 7px 10px;width:100%;border-radius: 10px;height: 100px;width:100%;border: 2px solid #16a085;cursor: pointer">
+											<div style="height:60px;width:100%;float:left;">
+												<div style="float:left;">
+													<img style="width:50px;" src="img/sol.png" />
+												</div>
+												<div style="float:left;margin-left:10px;">
+													<span style="line-height: 50px;color:#16a085;font-weight: 700;font-size: 30px;">检测结果</span>
+												</div>
+											</div>
+											<div style="width:100%;float:left;">
+												<span style="font-size: 15px;">冗余依赖检测报告和可视化结果</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="about_li" style="margin-top:5%;border-radius: 10px;float: right;height: 95%;width: 100%;border: 2px solid #fff;background-color: #00000066; padding: 1%;">
+								<ul style="display: flex;">
+									<li class="bb" style="line-height: 3;font-size: 20px">
+										<span style="font-family: Palatino Linotype;">
+											<span style="font-family: Wingdings;font-size: 20px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px;">下载</span><br />
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工具链接:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/tools.7z" style="text-decoration: none;" class="custom-link">SLIMMING</a></span><br />
+											<span style="font-family: Wingdings;font-size: 20px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px;">安装</span><br />
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows环境下运行:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/install.bat" style="text-decoration: none;" class="custom-link">Install.bat</a><br />
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux/Mac环境下运行:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/slimming-fat/slimming-fat.github.io/blob/master/Slimming/install"style="text-decoration: none;" class="custom-link">Install</a><br />
+										</span>
+									</li>
+									<li>
+										<span style="font-family:book antiqua;font-size: 20px; line-height: 2;">
+											<span style="font-family: Wingdings;font-size: 20px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单模块项目检测指令<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 20px; color: darkorange;">mvn neu.lab:slimming:1.0:singleModuleCheck</span><br />
+											<span style="font-family: Wingdings;font-size: 20px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多模块项目检测指令<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 20px; color: darkorange;">mvn neu.lab:slimming:1.0:multiModuleCheck</span><br />
+											<span style="font-family: Wingdings;font-size: 20px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运行参数(可选)<br />
+											<table style="font-size: 20px; margin-left: 3%; border: 1px solid #FFA500; border-collapse: collapse;text-align: center;" >
+												<tr style="font-weight: 700; font-size: 25px;">
+													<th style="width: 15%; border: 1px solid #FFA500;">Name</th>
+													<th style="width: 10%; border: 1px solid #FFA500;">Type</th>
+													<th style="width: 75%; border: 1px solid #FFA500;">Description</th>
+												</tr>
+												<tr>
+													<td style="width: 15%;border: 1px solid #FFA500;">repair</td>
+													<td style="width: 10%;border: 1px solid #FFA500;">boolean</td>
+													<td style="width: 75%;border: 1px solid #FFA500;">If this is true, Slimming creates a debloated version of the pom without unused dependencies called
+														pom-result.xml.Default value is: true</td>
+												</tr>
+												<tr>
+													<td style="width: 15%;border: 1px solid #FFA500;">treeCallGraph</td>
+													<td style="width: 10%;border: 1px solid #FFA500;">boolean</td>
+													<td style="width: 75%;border: 1px solid #FFA500;">If this is true, Slimming can obtain a dependency call graph.Default value is: true</td>
+												</tr>
+												<tr>
+													<td style="width: 15%;border: 1px solid #FFA500;">reflect</td>
+													<td style="width: 10%;border: 1px solid #FFA500;">boolean</td>
+													<td style="width: 75%;border: 1px solid #FFA500;">If this is true, Slimming performs class-level reflection analysis.Default value is: true</td>
+												</tr>
+												<tr>
+													<td style="width: 15%;border: 1px solid #FFA500;">outDir</td>
+													<td style="width: 10%;border: 1px solid #FFA500;">String</td>
+													<td style="width: 75%;border: 1px solid #FFA500;">Customize the storage path for storing the analysis results of bloated dependencies</td>
+												</tr>
+											</table>
+										</span>
+									</li>
+									<li>
+										<span style="font-family: Palatino Linotype">
+											<!-- <div class="baseScroll" style="width:100%;height:525px;overflow-y: scroll"> -->
+											<pre>
+<code style="font-size: 20px; color: burlywood;"><span class="keyword">ALL DEPENDENCY[9]:</span>
+ <span class="keyword">USED DEPENDENCY[4]:</span>
+  <span class="keyword">USED DIRECT DEPENDENCY[1]:</span>
+	springframework.boot:spring-boot-configuration-processor:2.0.6.RELEASE:provided <span style="color: goldenrod;">[86 KB]</span>
+  <span class="keyword">USED TRANSITIVE DEPENDENCY[3]:</span>
+	ch.qos.logback:logback-core:1.2.3:compile <span style="color: goldenrod;">[460 KB]</span>
+	com.fasterxml:classmate:1.3.4:compile <span style="color: goldenrod;">[63 KB]</span>
+	com.fasterxml.jackson.core:jackson-core:2.9.7:compile <span style="color: goldenrod;">[316 KB]</span>
+  <span class="keyword">USED INHERIT DIRECT DEPENDENCY[0]:</span>
+  <span class="keyword">USED INHERIT TRANSITIVE DEPENDENCY[0]:</span>
+ <span class="keyword">UNUSED DEPENDENCY[5]:</span>
+  <span class="keyword">UNUSED DIRECT DEPENDENCY[1]:</span>
+	org.springframework.boot:spring-boot-starter-web:2.0.6.RELEASE:compile <span style="color: goldenrod;">[588 bytes]</span>
+  <span class="keyword">UNUSED TRANSITIVE DEPENDENCY[4]:</span>
+	org.springframework.boot:spring-boot-starter-tomcat:2.0.6.RELEASE:compile <span style="color: goldenrod;">[591 bytes]</span>
+	org.springframework.boot:spring-boot-starter-logging:2.0.6.RELEASE:compile <span style="color: goldenrod;">[613 bytes]</span>
+	org.springframework.boot:spring-boot-starter:2.0.6.RELEASE:compile <span style="color: goldenrod;">[593 bytes]</span>
+	org.springframework.boot:spring-boot-starter-json:2.0.6.RELEASE:compile <span style="color: goldenrod;">[645 bytes]</span>
+  <span class="keyword">UNUSED INHERIT DIRECT DEPENDENCY[0]:</span>
+  <span class="keyword">UNUSED INHERIT TRANSITIVE DEPENDENCY[0]:</span></code></pre>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/diagnosis.js"></script>
+</html>
