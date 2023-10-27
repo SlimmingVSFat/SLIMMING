@@ -12,6 +12,8 @@ $(document).ready(function() {
 	});
 
 	$('#diagnosis_div').off('click').on('click', function() {
+		$('.head_menu').removeClass('active');
+		$("#Diagnosis").addClass('active');
 		var container = $('#main_div');
 		loadDiagnosis(container);
 	})

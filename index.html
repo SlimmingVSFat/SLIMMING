@@ -11,15 +11,11 @@
 		<link rel="stylesheet" href="css/homePage.css" />
 		<link rel='stylesheet' href="css/Diagnosis.css" />
 		<link rel="stylesheet" href="css/index.css" />
-		<!-- <link rel='stylesheet' href="css/diagnosis_tools.css" /> -->
 		<link rel="stylesheet" href="css/demo.css">
 		<script type="text/javascript" src="js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery-3.5.1/jquery.particleground.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script src="js/about.js"></script>
-		<script src="js/aa.js"></script>
-		<script src="js/data.js"></script>
-		<script src="js/d-test.js"></script>
 	
 
 	</head>
@@ -184,6 +180,21 @@
 				</ul> -->
 			</div>
 		</div>
+		<script type="text/javascript">
+		  /**
+		   * 实现jsonp
+		   * 1.创建script的标签
+		   * 2.拼接 url
+		   * 3.赋值url
+		   * 4.放入头部
+		  */
+		  function text_jsonp(req){
+		    var script = document.createElement('script');
+		    var url = req.url + '?callback=' + req.callback.name;
+		    script.src = url;
+		    document.getElementsByTagName('head')[0].appendChild(script);
+		  }
+		</script>
 	</body>
 	<!-- <script src="js/diagnosis.js"></script> -->
 </html>
