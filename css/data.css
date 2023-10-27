@@ -4,14 +4,15 @@
     text-align: center;
     border: 3px solid #70C99E;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
 }
 .table thead{
     display:table;
-    width: calc( 100% - 0.4em);
+    width: 100%;
 }
 
 .table tbody {
+	width: 100%;
 	display: block;
 	height: 725px;
 	overflow-y:scroll;
@@ -21,7 +22,7 @@
     height:auto;
 }
 .table_width_ProjectName{
-    width: 15%;
+    width: 20%;
     height:auto;
 }
 .table_width_CommitID{
@@ -29,22 +30,11 @@
     height:auto;
 }
 
-.table_width_LastUpdateTime{
-    width: 10%;
-    heigth:auto;
-}
-.table_width_IssueID{
-    width: 7.5%;
-    height: auto;
-}
 .table_width_IssueType{
     width: 10%;
     height: auto;
 }
-.table_width_IssueStatus{
-    width: 10%;
-    height: auto;
-}
+
 
 .tr_mark_01{
     margin-left: 5%;

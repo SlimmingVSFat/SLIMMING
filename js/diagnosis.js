@@ -9,11 +9,11 @@ $(document).ready(function() {
 //		$("#help-img").css("height","160px");
 //		$("#help-img").src="../static/img/demo/demo-l2.png";
 //	});
-    var dinput = document.getElementById('d-input');
-    var dhelp = document.getElementById('help-img');
-    dinput.onmouseover = function () {
-        dhelp.src="img/demo/demo-1.png";
-    }
+    // var dinput = document.getElementById('d-input');
+    // var dhelp = document.getElementById('help-img');
+    // dinput.onmouseover = function () {
+    //     dhelp.src="img/demo/demo-1.png";
+    // }
     
     
 	$("#start_diagnosis_btn").click(function() {

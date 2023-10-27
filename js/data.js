@@ -21,7 +21,7 @@ $(document).ready(function() {
 	});
 	$("#start").click(function() {
 		$(".head_menu").removeClass("active");
-		$(".head_menu").eq(3).addClass("active");
+		$(".head_menu").eq(2).addClass("active");
 		$(".reproduction").hide("slow");
 		$(".main_content li").removeClass("aa").eq(1).addClass("aa");
 	});
