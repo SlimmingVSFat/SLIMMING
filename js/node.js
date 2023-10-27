@@ -141,7 +141,7 @@ $(document).ready(function() {
 	);
 	const contains = document.getElementById('contains');
 	const width = contains.scrollWidth;
-	const height = contains.scrollHeight || 1000;
+	const height = contains.scrollHeight || 500;
 
 	// const minimap = new G6.Minimap({
 	// 	size: [150, 100]

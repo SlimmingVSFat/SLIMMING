@@ -7,6 +7,8 @@ $(document).ready(function() {
 	});
 
 	$('#h2w_div').off('click').on('click', function() {
+		$('.head_menu').removeClass('active');
+		$("#About").addClass('active');
 		var container = $('#main_div');
 		loadAbout(container);
 	});
