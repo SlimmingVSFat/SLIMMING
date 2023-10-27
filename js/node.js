@@ -469,8 +469,8 @@ $(document).ready(function() {
 				return 100;
 			},
 		},
-		// fitView: true,
-		// fitViewPadding: width * 0.1,
+		fitView: true,
+		fitViewPadding: width * 0.07,
 	});
 	const data = {
 		"id": "org.example:unindirectDependency:1.0",
