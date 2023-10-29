@@ -25,13 +25,40 @@
     width: 20%;
     height:auto;
 }
+.table_width_Stars{
+    width: 5%;
+    height: auto;
+}
+.table_width_Forks{
+    width: 5%;
+    height: auto;
+}
+.table_width_BloatedDependencies{
+    width: 10%;
+    height: auto;
+}
+.table_width_Vulnerabilities{
+    width: 10%;
+    height: auto;
+}
+.table_width_DependencyConflicts{
+    width: 10%;
+    height: auto;
+}
+.table_width_IncompatiableLicenses{
+    width: 10%;
+    height: auto;
+}
+.table_width_OutdatedDependencies{
+    width: 10%;
+    height: auto;
+}
 .table_width_CommitID{
     width: 10%;
     height:auto;
 }
-
 .table_width_IssueType{
-    width: 10%;
+    width: 5%;
     height: auto;
 }
 

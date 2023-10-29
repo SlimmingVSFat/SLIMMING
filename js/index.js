@@ -72,15 +72,15 @@ $(document).ready(function() {
 	}
 	//table页显示后，调用下方js (table页面高度，主要方法就是页面内容加载后，使用计算tbody高度)
 
-	$('#main_div').find('table').css('height', '0');
-	$('#main_div').find('table').each(function() {
-		var that = this;
-		var captionHeight = 0;
-		if ($(this).find('caption').length > 0) {
-			$(this).find('caption').each(function() {
-				captionHeight += $(this).outerHeight();
-			});
-		}
-		$(that).find('tbody').height(0.9 * (($(that).parent().height() - $(that).find('thead').height() - captionHeight)));
-	});
+// 	$('#main_div').find('table').css('height', '0');
+// 	$('#main_div').find('table').each(function() {
+// 		var that = this;
+// 		var captionHeight = 0;
+// 		if ($(this).find('caption').length > 0) {
+// 			$(this).find('caption').each(function() {
+// 				captionHeight += $(this).outerHeight();
+// 			});
+// 		}
+// 		$(that).find('tbody').height(0.9 * (($(that).parent().height() - $(that).find('thead').height() - captionHeight)));
+// 	});
 });
